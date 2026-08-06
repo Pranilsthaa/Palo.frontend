@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "835037732206",
+    "firebase_url": "https://palo-45d9f.firebaseio.com",
+    "project_id": "palo-45d9f",
+    "storage_bucket": "palo-45d9f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835037732206:android:b647c468b4a38834",
+        "android_client_info": {
+          "package_name": "com.palo.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "835037732206-4c99t8mrmj0v50t449l707554r6g6t8a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeCuyrpurwE3jTQGW6sY0m0Ckj_ZXUpi0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "408897047044-fg1f7hi3rda7v1ikbafqqo6gm4s3e4o0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
