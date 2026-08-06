@@ -1,7 +1,8 @@
 import { makeRedirectUri, useAuthRequest } from "expo-auth-session";
+import { router } from "expo-router";
 import * as WebBrowser from "expo-web-browser";
 import { useEffect } from "react";
-import { Button, View } from "react-native";
+import { Button, Text, TouchableOpacity, View } from "react-native";
 
 WebBrowser.maybeCompleteAuthSession();
 
@@ -46,13 +47,22 @@ export default function Index() {
     }
   }, [response]);
 
+  const test = () => {
+    router.push("/(test)/test");
+  };
+
   return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+    <View
+      style={{ flex: 1, alignItems: "center", justifyContent: "space-around" }}
+    >
       <Button
         title="Sign in"
         disabled={!request}
         onPress={() => promptAsync()}
       />
+      <TouchableOpacity style={{ padding: 12 }} onPress={test}>
+        <Text>Test</Text>
+      </TouchableOpacity>
     </View>
   );
 }
