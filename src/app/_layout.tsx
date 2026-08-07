@@ -1,5 +1,8 @@
 import { Stack } from "expo-router";
+import * as WebBrowser from "expo-web-browser";
+
+WebBrowser.maybeCompleteAuthSession();
 
 export default function RootLayout() {
-  return <Stack />;
+  return <Stack screenOptions={{ animation: "none", headerShown: false }} />;
 }
